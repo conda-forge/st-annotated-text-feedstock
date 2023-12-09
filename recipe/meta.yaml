@@ -1,5 +1,5 @@
 {% set name = "st-annotated-text" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/st-annotated-text-{{ version }}.tar.gz
-  sha256: 8337fcb3271c7f59a877e0fce5d822613116a4036d06890fc68cf840430b40aa
+  sha256: a8ccb9a35c078ef22c6ebb244a9a0605ce27f1fd699f55939497669081b79630
 
 build:
   noarch: python
