@@ -1,18 +1,18 @@
 {% set name = "st-annotated-text" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/st-annotated-text-{{ version }}.tar.gz
-  sha256: a8ccb9a35c078ef22c6ebb244a9a0605ce27f1fd699f55939497669081b79630
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b0134dcf734697cc3dbdb11862c4174071e7fb6f365af55a37c710d357fd88a5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
